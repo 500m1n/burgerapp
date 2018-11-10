@@ -1,0 +1,140 @@
+html body {
+    height: 100%;
+    font-family: 'Monoton', cursive;
+    font-family: 'Cabin Sketch', cursive;
+  }	
+  
+  .container.burger-app-container{
+    max-width: 100%;
+  }
+  
+  .vertical-middle{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+  }
+  .burger-app-container{
+    margin:0px;
+    padding:0px;
+    max-width:100%;
+    height: 100%;
+  }
+  .add-burger-container{
+    background: #0092ff;
+    color: white;
+    text-align: center;
+    padding:50px;
+  }
+  
+  .devour-burger-container{
+    background: #c7e40a;
+    padding:20px;
+    text-align: center;
+  }
+  .order-burger-container{
+    background: #ffcc00;
+    padding:20px;
+    text-align: center;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    float: right;
+    padding: 0px 10px 0px 10px;
+  }
+  .change-devour{
+    float: right;
+    /* display: inline-block; */
+    width: 115px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  .delete-burger{
+    float:right;
+    /* display: inline-block; */
+    font-size: 10px;
+    color:red;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  
+  input[type='radio']{
+    width: 15px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+  }
+  
+  input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  
+  input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    background: #faebd7;
+    display: inline-grid;
+    width: 100%;
+    text-align: center;
+  }
+    
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+    
+  .col > h1{
+    font-size: 60px;
+  }

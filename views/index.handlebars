@@ -1,0 +1,44 @@
+<div class="container burger-app-container">
+  <div class="row add-burger-container">
+    {{!-- ADD A BURGER --}}
+    <div class="col">
+      <h1>Eat-Da-🍔!</h1>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="ca">Add a Burger:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+        <div class="form-group">
+          <label for="devoured">Would you like to: </label>
+          <input type="radio" name="devoured" value="1"> Devour Now! 
+          <input type="radio" name="devoured" value="0"> Order
+        </div>
+        <button type="submit" class="btn btn-lg btn-default">Go</button>
+      </form>
+    </div>
+  </div>
+  <div class="row data-burger-container">
+    {{!-- BURGERS ORDERED --}}
+    <div class="col order-burger-container">
+      <h2>Burgers that are Ordered!</h2>
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    {{!-- BURGERS DEVOURED --}}
+    <div class="col devour-burger-container">
+      <h2>Burgers that are Devoured!</h2>
+        <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+              {{> burgers/burger-block devour=false}}
+            {{/if}}
+          {{/each}}
+        </ul>
+    </div>
+  </div>
+</div>
